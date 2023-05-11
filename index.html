@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Activity - Pokemon Trainer</title>
+	<script src="script.js"></script>
 </head>
 <body>
-	
-	<script src="./script.js">
-	</script>
+	<h1>Pokemon Trainer</h1>
+	<div id="trainer-info">
+		<h2>Trainer</h2>
+		<p>Name: <span id="trainer-name"></span></p>
+		<p>Age: <span id="trainer-age"></span></p>
+		<p>Pokemon:</p>
+		<ul id="trainer-pokemon"></ul>
+		<p>Friends:</p>
+		<ul id="trainer-friends"></ul>
+	</div>
+	<button onclick="trainer.talk()">Talk</button>
+	<button onclick="attack()">Tackle</button>
 </body>
 </html>
