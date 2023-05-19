@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon Battle</title>
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+        color: #f44336;
+      }
+      h2 {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1em;
+        color: #666;
+        margin: 0;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #e53935;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Pokemon Battle</h1>
+    <div>
+      <h2>Trainer Information</h2>
+      <p id="trainer-info"></p>
+      <button id="talk-btn">Talk</button>
+    </div>
+    <hr>
+    <div>
+       <h2>Choose Enemy Pokemon</h2>
+      <select id="enemy-pokemon-select">
+        <option value="Pikachu">Pikachu</option>
+        <option value="Charmander">Charmander</option>
+        <option value="Bulbasaur">Bulbasaur</option>
+        <option value="Squirtle">Squirtle</option>
+      </select>
+      <br><br>
+      <button id="battle-btn">Battle</button>
+      <button id="new-battle-btn" style="display: block;">New Battle</button>
+      <h2>Enemy Pokemon Information</h2>
+    </div>
+    <p id="pokemon-info"></p>
+    <button id="tackle-btn" disabled>Tackle</button>
+  </body>
+</html>
